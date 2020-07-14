@@ -1,2 +1,5 @@
 .idea
 .DS_Store
+api-automation/.idea
+api-automation/.gradle
+api-automation/build
