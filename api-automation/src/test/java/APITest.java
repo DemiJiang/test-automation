@@ -1,5 +1,7 @@
 import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.runner.RunWith;
+import com.tngtech.java.junit.dataprovider.*;
 
 import static io.restassured.RestAssured.config;
 import static io.restassured.RestAssured.given;
@@ -10,11 +12,12 @@ import static org.hamcrest.Matchers.empty;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.hasItems;
 
-public class InvoiceAPITest {
+public class APITest {
     @BeforeEach
     void setNumberReturnType() {
         config = newConfig().jsonConfig(jsonConfig().numberReturnType(DOUBLE));
     }
+
 
     @Test
     public void returnExpectedPayload(){
@@ -28,8 +31,9 @@ public class InvoiceAPITest {
                 .body()
                 .statusCode(200)
                 .assertThat()
-                .body("places.state[0]", equalTo("California"))
-                .body("country", equalTo("United States"));
+                .body("places.state", hasItems("California"))
+                .body("country", equalTo("United States"))
+                .body("places.latitude", hasItems("34.0901"));
     }
 
 

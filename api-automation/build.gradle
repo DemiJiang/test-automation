@@ -16,5 +16,7 @@ dependencies {
     testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.6.2'
     testCompile group: 'io.rest-assured', name: 'rest-assured', version: '4.3.0'
     testCompile group: 'org.hamcrest', name: 'hamcrest-core', version: '2.2'
+//    implementation 'com.myob:idam-java-auth-sdk:0.2.5'
+    testCompile group: 'com.tngtech.java', name: 'junit-dataprovider', version: '1.13.1'
 
 }
