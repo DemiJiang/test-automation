@@ -1,0 +1,116 @@
+HResolveAccessTokenExtension: token expired or not exist, will fetch it.
+…eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlVPR0tNNHltTFVPWkhTalh5VlcwTlVjemxLUSIsInR0eSI6ImFjY2Vzc190b2tlbiJ9.eyJpc3MiOiJodHRwczovL3NpdC5sb2dpbi5teW9iLmNvbS8iLCJzdWIiOiJqdW5vLWludGVncmF0aW9uLXRlc3QtY2xpZW50IiwiYXVkIjoiYmlsbGluZy1zZXJ2aWNlIiwiZXhwIjoxNTk1MzAzNjE2LCJuYmYiOjE1OTUzMDE4MTYsImlhdCI6MTU5NTMwMTgxNiwianRpIjoiMDZlNWQzZjItODQwOC00ODUxLTliYTgtZWM3MDc1ZjhiNjJhIiwiY2xpZW50X2lkIjoianVuby1pbnRlZ3JhdGlvbi10ZXN0LWNsaWVudCJ9.fx8mimO4HA-oPU6mTRfhzw4BxM00vzvOr8cUnMgblEhvReR2_cw0i7YJtp800LmH7eo9Ws90LwuDbC3yeLz1sANbfvqoDBMrj1QqzYBcQFViBUEjiwHzOOnKaxrJyHTcPHL1-u-6Kn6O3xo5MEqZuikZoKkN0b5MNpKoTrSuz6ssciTiO4KnEV1RTPV1XpjuEc7U6OC72C8PXbQGKlLhtn_wXBuTX8T-XWbXmW7oX7NQy0VNoUZ6a_81-Ckf1htUgs__WDC9M12KO_JBfXw8h0hvuwb-ml0aKpFBRo96W0Xsy5hAtygBdbQkHn9sFpzm9hwE1793NdjT_L360_n9qQ
+{
+    "data": [
+
+        {
+!            "type": "Cash Sale",
+.            "invoiceNumber": "1-51256421910",
+            "totalDue": 81.60,
+"            "totalAmount": 81.60,
+)            "invoiceDate": "2020-07-13",
+.            "billingStartDate": "2020-10-01",
+,            "billingEndDate": "2020-10-31",
+            "region": "AU",
+&            "accountId": "1-N0OPK6K",
+%            "invoiceId": "1-NJOR09I"
+        },
+
+        {
+!            "type": "Cash Sale",
+.            "invoiceNumber": "1-51210848542",
+            "totalDue": 33.60,
+"            "totalAmount": 81.60,
+)            "invoiceDate": "2020-07-06",
+.            "billingStartDate": "2020-09-01",
+,            "billingEndDate": "2020-09-30",
+            "region": "AU",
+&            "accountId": "1-N0OPK6K",
+%            "invoiceId": "1-NIXM7MM"
+        },
+
+        {
+!            "type": "Cash Sale",
+.            "invoiceNumber": "1-51165762934",
+            "totalDue": 0.00,
+"            "totalAmount": 81.60,
+)            "invoiceDate": "2020-06-30",
+.            "billingStartDate": "2020-08-01",
+,            "billingEndDate": "2020-08-31",
+            "region": "AU",
+&            "accountId": "1-N0OPK6K",
+%            "invoiceId": "1-NI6RVCM"
+        },
+
+        {
+!            "type": "Cash Sale",
+.            "invoiceNumber": "1-51161329447",
+            "totalDue": 81.60,
+"            "totalAmount": 81.60,
+)            "invoiceDate": "2020-06-30",
+.            "billingStartDate": "2020-07-01",
+,            "billingEndDate": "2020-07-31",
+            "region": "AU",
+&            "accountId": "1-N0OPK6K",
+%            "invoiceId": "1-NI44UG7"
+        },
+
+        {
+!            "type": "Cash Sale",
+.            "invoiceNumber": "1-51054820209",
+            "totalDue": 81.60,
+"            "totalAmount": 81.60,
+)            "invoiceDate": "2020-06-18",
+.            "billingStartDate": "2020-06-01",
+,            "billingEndDate": "2020-06-30",
+            "region": "AU",
+&            "accountId": "1-N0OPK6K",
+%            "invoiceId": "1-NGCPZE9"
+        },
+
+        {
+!            "type": "Cash Sale",
+.            "invoiceNumber": "1-51052957130",
+            "totalDue": 81.60,
+"            "totalAmount": 81.60,
+)            "invoiceDate": "2020-06-18",
+.            "billingStartDate": "2020-05-01",
+,            "billingEndDate": "2020-05-31",
+            "region": "AU",
+&            "accountId": "1-N0OPK6K",
+%            "invoiceId": "1-NGBM1U2"
+        },
+
+        {
+!            "type": "Cash Sale",
+.            "invoiceNumber": "1-51045998910",
+            "totalDue": 21.47,
+"            "totalAmount": 21.47,
+)            "invoiceDate": "2020-06-17",
+.            "billingStartDate": "2020-04-23",
+,            "billingEndDate": "2020-04-30",
+            "region": "AU",
+&            "accountId": "1-N0OPK6K",
+%            "invoiceId": "1-NG7GWU6"
+        },
+
+        {
+!            "type": "Cash Sale",
+.            "invoiceNumber": "1-51028621421",
+            "totalDue": 0.00,
+#            "totalAmount": 269.10,
+)            "invoiceDate": "2020-06-11",
+&            "billingStartDate": null,
+$            "billingEndDate": null,
+            "region": "AU",
+&            "accountId": "1-N0OPK6K",
+%            "invoiceId": "1-NFX4GA5"
+
+        }
+    ],
+    "meta": {
+        "page": 1,
+        "pageSize": 10,
+        "totalRecords": 8
+    }
+}
