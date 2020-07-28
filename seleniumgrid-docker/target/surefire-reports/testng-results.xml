@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-28T10:04:12 AEST" name="SeleniumGridDocker" finished-at="2020-07-28T10:04:19 AEST" duration-ms="6140">
+  <suite started-at="2020-07-28T21:15:48 AEST" name="SeleniumGridDocker" finished-at="2020-07-28T21:16:00 AEST" duration-ms="11939">
     <groups>
     </groups>
-    <test started-at="2020-07-28T10:04:12 AEST" name="Chrome Test" finished-at="2020-07-28T10:04:19 AEST" duration-ms="6140">
-      <class name="login.LoginTests">
-        <test-method is-config="true" signature="initiateDriver(java.lang.String)[pri:0, instance:login.LoginTests@140e5a13]" started-at="2020-07-28T10:04:12 AEST" name="initiateDriver" finished-at="2020-07-28T10:04:16 AEST" duration-ms="4010" status="PASS">
+    <test started-at="2020-07-28T21:15:48 AEST" name="Chrome Test" finished-at="2020-07-28T21:16:00 AEST" duration-ms="11939">
+      <class name="dropdown.DropDownTests">
+        <test-method is-config="true" signature="initiateDriver(java.lang.String)[pri:0, instance:dropdown.DropDownTests@71d15f18]" started-at="2020-07-28T21:15:55 AEST" name="initiateDriver" finished-at="2020-07-28T21:15:59 AEST" duration-ms="3864" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,32 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateDriver -->
-        <test-method signature="testSuccessfulLogin()[pri:0, instance:login.LoginTests@140e5a13]" started-at="2020-07-28T10:04:16 AEST" name="testSuccessfulLogin" finished-at="2020-07-28T10:04:18 AEST" duration-ms="2039" status="PASS">
+        <test-method signature="testSelectOption()[pri:0, instance:dropdown.DropDownTests@71d15f18]" started-at="2020-07-28T21:15:59 AEST" name="testSelectOption" finished-at="2020-07-28T21:16:00 AEST" duration-ms="1008" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSelectOption -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:dropdown.DropDownTests@71d15f18]" started-at="2020-07-28T21:16:00 AEST" name="tearDown" finished-at="2020-07-28T21:16:00 AEST" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- dropdown.DropDownTests -->
+      <class name="login.LoginTests">
+        <test-method is-config="true" signature="initiateDriver(java.lang.String)[pri:0, instance:login.LoginTests@dbd940d]" started-at="2020-07-28T21:15:48 AEST" name="initiateDriver" finished-at="2020-07-28T21:15:52 AEST" duration-ms="4507" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9001]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateDriver -->
+        <test-method signature="testSuccessfulLogin()[pri:0, instance:login.LoginTests@dbd940d]" started-at="2020-07-28T21:15:52 AEST" name="testSuccessfulLogin" finished-at="2020-07-28T21:15:55 AEST" duration-ms="2404" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSuccessfulLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:login.LoginTests@140e5a13]" started-at="2020-07-28T10:04:18 AEST" name="tearDown" finished-at="2020-07-28T10:04:19 AEST" duration-ms="73" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:login.LoginTests@dbd940d]" started-at="2020-07-28T21:15:55 AEST" name="tearDown" finished-at="2020-07-28T21:15:55 AEST" duration-ms="68" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

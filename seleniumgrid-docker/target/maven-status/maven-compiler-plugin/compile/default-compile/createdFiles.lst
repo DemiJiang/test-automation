@@ -1,4 +1,5 @@
 pages/SecureAreaPage.class
+pages/DropdownPage.class
 pages/LoginPage.class
 PageClass.class
 pages/HomePage.class

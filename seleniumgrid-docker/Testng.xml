@@ -8,6 +8,7 @@
         <parameter name="Port" value="9001" />
         <classes>
             <class name="login.LoginTests"></class>
+            <class name="dropdown.DropDownTests"></class>
         </classes>
     </test>
 
