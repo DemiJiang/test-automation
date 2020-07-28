@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="63.594" tests="4" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="6.49" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="surefire.suiteXmlFiles" value="Testng.xml"/>
     <property name="java.specification.version" value="13"/>
@@ -54,14 +54,5 @@
     <property name="library.jansi.path" value="/usr/local/Cellar/maven/3.6.3_1/libexec/lib/jansi-native"/>
     <property name="java.class.version" value="57.0"/>
   </properties>
-  <testcase name="Test1" classname="TestClass" time="8.161"/>
-  <testcase name="Test1" classname="TestClass" time="0.343"/>
-  <testcase name="Test2" classname="TestClass" time="5.923">
-    <failure message="Index 0 out of bounds for length 0" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at TestClass.Test2(TestClass.java:53)
-</failure>
-    <system-out><![CDATA[Test2 :firefox
-]]></system-out>
-  </testcase>
-  <testcase name="Test2" classname="TestClass" time="46.243"/>
+  <testcase name="testSuccessfulLogin" classname="login.LoginTests" time="2.042"/>
 </testsuite>

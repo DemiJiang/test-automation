@@ -11,8 +11,42 @@ services:
       GRID_BROWSER_TIMEOUT: 3000
       GRID_TIMEOUT: 3000
 
+#  chrome:
+#    image: selenium/node-chrome
+#    container_name: web-automation_chrome
+#    depends_on:
+#      - hub
+#    environment:
+#      HUB_PORT_4444_TCP_ADDR: hub
+#      HUB_PORT_4444_TCP_PORT: 4444
+#      NODE_MAX_SESSION: 4
+#      NODE_MAX_INSTANCES: 4
+#    volumes:
+#      - /dev/shm:/dev/shm
+#    ports:
+#      - "9001:5900"
+#    links:
+#      - hub
+#
+#  firefox:
+#    image: selenium/node-firefox
+#    container_name: web-automation_firefox
+#    depends_on:
+#      - hub
+#    environment:
+#      HUB_PORT_4444_TCP_ADDR: hub
+#      HUB_PORT_4444_TCP_PORT: 4444
+#      NODE_MAX_SESSION: 2
+#      NODE_MAX_INSTANCES: 2
+#    volumes:
+#      - /dev/shm:/dev/shm
+#    ports:
+#      - "9002:5900"
+#    links:
+#      - hub
+
   chrome:
-    image: selenium/node-chrome
+    image: selenium/node-chrome-debug
     container_name: web-automation_chrome
     depends_on:
       - hub
@@ -28,19 +62,19 @@ services:
     links:
       - hub
 
-  firefox:
-    image: selenium/node-firefox
-    container_name: web-automation_firefox
-    depends_on:
-      - hub
-    environment:
-      HUB_PORT_4444_TCP_ADDR: hub
-      HUB_PORT_4444_TCP_PORT: 4444
-      NODE_MAX_SESSION: 2
-      NODE_MAX_INSTANCES: 2
-    volumes:
-      - /dev/shm:/dev/shm
-    ports:
-      - "9002:5900"
-    links:
-      - hub
+#  firefox:
+#    image: selenium/node-firefox-debug
+#    container_name: web-automation_firefox
+#    depends_on:
+#      - hub
+#    environment:
+#      HUB_PORT_4444_TCP_ADDR: hub
+#      HUB_PORT_4444_TCP_PORT: 4444
+#      NODE_MAX_SESSION: 2
+#      NODE_MAX_INSTANCES: 2
+#    volumes:
+#      - /dev/shm:/dev/shm
+#    ports:
+#      - "9002:5900"
+#    links:
+#      - hub

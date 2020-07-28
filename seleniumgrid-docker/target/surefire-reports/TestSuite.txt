@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 63.594 s <<< FAILURE! - in TestSuite
-Test2(TestClass)  Time elapsed: 5.923 s  <<< FAILURE!
-java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at TestClass.Test2(TestClass.java:53)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.49 s - in TestSuite
