@@ -10,3 +10,5 @@ http://localhost:4444/grid/console
 mvn clean test -Dsurefire.suiteXmlFiles=Testng.xml
 
 Chrome version -> Chrome webdriver version
+
+https://stackoverflow.com/questions/12729265/switch-tabs-using-selenium-webdriver-with-java
