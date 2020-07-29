@@ -1,10 +1,13 @@
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidDriver;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.net.URL;
+import java.util.List;
 
 public class FirstTest {
     private static final String APP = "https://github.com/cloudgrey-io/the-app/releases/download/v1.9.0/TheApp-v1.9.0.apk";
@@ -33,6 +36,8 @@ public class FirstTest {
 
     @Test
     public void test(){
-        System.out.println("Here is the test!");
+//        WebElement element = driver.findElement(MobileBy.AccessibilityId("Login Screen"));
+        List<WebElement> elements = driver.findElements(MobileBy.AccessibilityId("Login Screen"));
+        System.out.println(elements.size());
     }
 }
