@@ -5,6 +5,9 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.URL;
 import java.util.List;
@@ -24,7 +27,6 @@ public class FirstTest {
        caps.setCapability("automationName", "UiAutomator2");
        caps.setCapability("app", APP);
        driver = new AndroidDriver(new URL(APPIUM), caps);
-       try {Thread.sleep(3000);} catch (Exception ign){}
     }
 
     @After
@@ -36,8 +38,8 @@ public class FirstTest {
 
     @Test
     public void test(){
-//        WebElement element = driver.findElement(MobileBy.AccessibilityId("Login Screen"));
-        List<WebElement> elements = driver.findElements(MobileBy.AccessibilityId("Login Screen"));
-        System.out.println(elements.size());
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.AccessibilityId("Login Screen")));
+
     }
 }
