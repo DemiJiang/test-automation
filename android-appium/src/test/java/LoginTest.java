@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.net.URL;
 import java.util.List;
 
-public class FirstTest {
+public class LoginTest {
     private static final String APP = "https://github.com/cloudgrey-io/the-app/releases/download/v1.9.0/TheApp-v1.9.0.apk";
     private static final String APPIUM = "http://localhost:4723/wd/hub";
 
