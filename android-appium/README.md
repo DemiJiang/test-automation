@@ -27,3 +27,5 @@ On android content-desc is the accessibility id
 
 Element discovery 
 Inspector -> Automatic Server -> 
+
+XML Essential Training -> What is XPath?
