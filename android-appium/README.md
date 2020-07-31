@@ -24,3 +24,6 @@ Android_HOME:/Users/demi.jiang/Library/Android/sdk
 JAVA_HOME:/usr/libexec/java_home -v 1.8
 
 On android content-desc is the accessibility id 
+
+Element discovery 
+Inspector -> Automatic Server -> 

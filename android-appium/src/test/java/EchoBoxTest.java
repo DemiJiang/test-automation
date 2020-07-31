@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.URL;
 
-public class SecondTest {
+public class EchoBoxTest {
     private static final String APP = "https://github.com/cloudgrey-io/the-app/releases/download/v1.9.0/TheApp-v1.9.0.apk";
     private static final String APPIUM = "http://localhost:4723/wd/hub";
 
@@ -37,14 +37,18 @@ public class SecondTest {
     @Test
     public void test(){
         WebDriverWait wait = new WebDriverWait(driver, 10);
-        WebElement screen = wait.until(
+        wait.until(
                 ExpectedConditions.presenceOfElementLocated(
-                        MobileBy.AccessibilityId("Login Screen")));
-        screen.click();
+                        MobileBy.AccessibilityId("Echo Box"))).click();
 
-        try {Thread.sleep(1000);} catch (Exception ign){}
-        System.out.println(driver.getPageSource());
+        wait.until(
+                ExpectedConditions.presenceOfElementLocated(
+                        MobileBy.AccessibilityId("messageInput"))).sendKeys("Hello World!");
 
+        driver.findElement(MobileBy.AccessibilityId("messageSaveBtn")).click();
+
+        wait.until(
+                ExpectedConditions.presenceOfElementLocated(MobileBy.AccessibilityId("Hello World!")));
 
     }
 }
