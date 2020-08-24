@@ -22,6 +22,7 @@ class APITest {
 //                      .path("access_token");
 //  }
 
+    //test a change
 
     @Test
     void returnExpectedPayload(String accessToken){
@@ -40,6 +41,21 @@ class APITest {
 
     @Test
     void postRequest(String accessToken) {
+        given()
+                .auth().oauth2(accessToken)
+                .contentType("application/json")
+                .body(loadResource("post.json"))
+                .when()
+                .post(Base.baseUrl_SIT + "url")
+                .then()
+                .log()
+                .body()
+                .assertThat()
+                .statusCode(200);
+    }
+
+    @Test
+    void postRequestOne(String accessToken) {
         given()
                 .auth().oauth2(accessToken)
                 .contentType("application/json")
